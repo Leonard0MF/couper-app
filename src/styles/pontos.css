@@ -1,0 +1,14 @@
+/* cartão de pontos */
+.punch{background:var(--brand);border:1px solid var(--line-2);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:14px}
+.punch .big{font-family:var(--f-caps);font-size:64px;line-height:.9;color:var(--orange);letter-spacing:.02em}
+.stamps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.stamp{aspect-ratio:1;border-radius:50%;border:1.5px dashed var(--line-2);display:grid;place-items:center}
+.stamp svg{width:56%;height:56%;fill:none;stroke-width:1.8;stroke-linecap:round;stroke:var(--orange)}
+.stamp.on{border:2px solid var(--orange);background:var(--orange-soft);transform:rotate(-8deg)}
+.stamp.on:nth-child(even){transform:rotate(6deg)}
+.reward{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.ledger .li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.ledger .li b{font-variant-numeric:tabular-nums}
+.pos{color:var(--good)}.neg{color:var(--bad)}
+.voucher{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1.5px dashed var(--orange);border-radius:12px;padding:12px 14px}
+.voucher .code{font-family:var(--f-caps);font-size:30px;letter-spacing:.24em;color:var(--orange);line-height:1}

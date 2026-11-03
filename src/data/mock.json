@@ -1,0 +1,97 @@
+{
+  "shop": {
+    "name": "Barbearia Couper",
+    "address": "Rua de exemplo, 123 · Centro",
+    "city": "Sua cidade",
+    "whatsapp": "",
+    "instagram": "",
+    "hours": {
+      "0": null,
+      "1": null,
+      "2": [9, 20],
+      "3": [9, 20],
+      "4": [9, 20],
+      "5": [9, 20],
+      "6": [8, 18]
+    }
+  },
+
+  "services": [
+    { "id": "corte", "name": "Corte", "price": 45, "min": 40, "pts": 10, "cut": 1, "beard": 0 },
+    { "id": "barba", "name": "Barba", "price": 35, "min": 30, "pts": 8, "cut": 0, "beard": 1 },
+    { "id": "combo", "name": "Corte + barba", "price": 70, "min": 60, "pts": 18, "cut": 1, "beard": 1 },
+    { "id": "pezinho", "name": "Pezinho", "price": 15, "min": 15, "pts": 3, "cut": 0, "beard": 0 },
+    { "id": "sobrancelha", "name": "Sobrancelha", "price": 15, "min": 15, "pts": 3, "cut": 0, "beard": 0 },
+    { "id": "luzes", "name": "Luzes / platinado", "price": 120, "min": 90, "pts": 25, "cut": 0, "beard": 0 }
+  ],
+
+  "barbers": [
+    { "id": "b1", "name": "Diego", "role": "Degradê e navalhado" },
+    { "id": "b2", "name": "Jonas", "role": "Barba e acabamento" },
+    { "id": "b3", "name": "Cauã", "role": "Freestyle e química" }
+  ],
+
+  "styles": [
+    { "id": "low", "name": "Low fade", "desc": "Degradê baixo, discreto", "sid": "corte" },
+    { "id": "mid", "name": "Mid fade", "desc": "Degradê na altura média", "sid": "corte" },
+    { "id": "high", "name": "High fade", "desc": "Degradê alto, bem marcado", "sid": "corte" },
+    { "id": "social", "name": "Social", "desc": "Tesoura e máquina, clássico", "sid": "corte" },
+    { "id": "navalhado", "name": "Navalhado", "desc": "Acabamento na navalha", "sid": "corte" },
+    { "id": "buzz", "name": "Buzz cut", "desc": "Máquina rente, prático", "sid": "corte" },
+    { "id": "barba", "name": "Barba completa", "desc": "Toalha quente e navalha", "sid": "barba" },
+    { "id": "platinado", "name": "Platinado", "desc": "Descoloração completa", "sid": "luzes" }
+  ],
+
+  "plans": [
+    {
+      "id": "corte", "name": "Clube Corte", "price": 79.9, "cuts": 2, "beards": 0, "double": true,
+      "perks": ["2 cortes por mês", "Pontos em dobro nos serviços pagos", "10% em produtos"]
+    },
+    {
+      "id": "completo", "name": "Clube Completo", "price": 199.9, "cuts": 4, "beards": 4, "double": true, "best": true,
+      "perks": ["4 cortes e 4 barbas por mês", "Pontos em dobro nos serviços pagos", "15% em produtos", "Prioridade na agenda de sábado"]
+    },
+    {
+      "id": "barba", "name": "Clube Barba", "price": 99.9, "cuts": 0, "beards": 4, "double": false,
+      "perks": ["4 barbas por mês", "10% em produtos"]
+    }
+  ],
+
+  "rewards": [
+    { "id": "r1", "name": "Sobrancelha grátis", "cost": 50 },
+    { "id": "r2", "name": "Corte grátis", "cost": 100 },
+    { "id": "r3", "name": "Corte + barba grátis", "cost": 160 }
+  ],
+
+  "me": { "name": "Lucas", "phone": "(51) 99812-4471" },
+
+  "myHistory": [
+    { "daysAgo": 63, "sid": "combo", "bid": "b1" },
+    { "daysAgo": 41, "sid": "corte", "bid": "b1" },
+    { "daysAgo": 20, "sid": "combo", "bid": "b2" }
+  ],
+
+  "members": [
+    { "name": "Rafael M.", "planId": "completo" },
+    { "name": "Bruno S.", "planId": "corte" },
+    { "name": "Gustavo P.", "planId": "corte" },
+    { "name": "Felipe R.", "planId": "completo" },
+    { "name": "Henrique T.", "planId": "barba" },
+    { "name": "Vinícius A.", "planId": "corte" },
+    { "name": "Matheus L.", "planId": "completo" },
+    { "name": "Caio D.", "planId": "corte" },
+    { "name": "Eduardo F.", "planId": "barba" },
+    { "name": "Leonardo C.", "planId": "corte" },
+    { "name": "Renan B.", "planId": "completo" },
+    { "name": "Igor V.", "planId": "corte" }
+  ],
+
+  "randomAgenda": {
+    "clients": ["Rafael M.", "Bruno S.", "Thiago K.", "Gustavo P.", "André L.", "Felipe R.", "Marcos V.", "Pedro H.", "Daniel O.", "Caio D.", "Igor V.", "Samuel N."],
+    "services": ["corte", "barba", "combo", "pezinho"],
+    "perBarberPerDay": [4, 7],
+    "daysBefore": 1,
+    "daysAfter": 7,
+    "seed": 20261022
+  }
+}

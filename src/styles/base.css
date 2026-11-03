@@ -1,0 +1,21 @@
+/* Identidade da Barbearia Couper: marrom da logo como chão, laranja como único acento, letreiro em caixa alta espaçada e script só em momentos de marca. Tema único, de propósito. */
+:root{
+  --bg:#2B1705; --bg-2:#331C07; --card:#3D220A; --card-2:#472A0E; --brand:#46270A;
+  --line:rgba(255,226,190,.13); --line-2:rgba(255,226,190,.22);
+  --orange:#F68221; --orange-hi:#FF9B45; --orange-soft:rgba(246,130,33,.15); --on-orange:#2B1705;
+  --cream:#F7EBDB; --muted:#CDB497; --dim:#9C8166;
+  --good:#9BD7A4; --good-soft:rgba(155,215,164,.14); --bad:#FF9384; --bad-soft:rgba(255,147,132,.13);
+  --f-caps:"Bebas Neue","Oswald","Arial Narrow",sans-serif; --f-script:"Yellowtail","Brush Script MT",cursive; --f-body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--cream);font:15px/1.5 var(--f-body);padding-top:env(safe-area-inset-top,0px)}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+.caps{font-family:var(--f-caps);letter-spacing:.12em;font-weight:400}
+.script{font-family:var(--f-script);color:var(--orange)}
+.muted{color:var(--muted)}.dim{color:var(--dim)}
+.small{font-size:13px}
+.num{font-variant-numeric:tabular-nums}
+.orange{color:var(--orange)}
